@@ -1,0 +1,151 @@
+/* === Typography === */
+
+body {
+    font-family: ‘Helvetica’, ‘Arial’, sans-serif;
+    font-size: 14pt;
+    line-height: 18pt;
+    color: #000000;
+}
+
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Teko', sans-serif;
+    font-size: 72pt;
+}
+
+h2 {
+    font-family: 'Teko', sans-serif;
+    font-size:24pt;
+}
+
+footer {
+    font-family: 'Teko', sans-serif;
+    color: white;
+    font-size: 18pt;
+}
+
+/* === Backgrounds === */
+
+header{
+    background-color:black;
+}
+
+main{
+    background-color: lightgray;
+}
+
+body{
+   background-color:white;
+}
+
+footer{
+    background-color:black;
+}
+
+#splash{
+    background-size:cover;
+    background-image: url(heading.jpg)
+}
+
+/* === Box Model === */
+
+#splash {
+    height:400px;
+}
+
+nav {
+    height:30px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+
+header{
+    padding-top: 15px;
+}
+
+footer {
+    height:100px;
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:10px;
+    top:15;
+}
+
+
+article{
+    margin-bottom:50px;
+    padding-left:10px;
+    padding-right:15px;
+}
+
+nav a {
+    margin-right:15px;
+}
+
+/* === Layout === */
+
+.floatleft {
+    float: left;
+    margin-right:20px;
+    margin-bottom:10px;
+}
+
+#container {
+    width:1000px;
+    margin:auto;
+}
+
+main {
+    display:grid;
+    grid-template-columns:75% 25%;
+}
+
+#splash{
+    grid-column-start:1;
+    grid-column-end:3;
+    padding-top:100px;
+}
+
+#foodarticles{
+    grid-column-start:1;
+    grid-column-end:2;
+}
+
+#sidebar{
+    grid-column-start:2;
+    grid-column-end:3;
+    float:right;
+}
+
+header{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    text-align:center;
+}
+
+#advertisement{
+    width:400px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    background-color:red;
+    padding: 5px 15px 5px 15px;
+}
+
+/* === Flexbox === */
+
+#splash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    text-align: center;
+}
