@@ -105,18 +105,39 @@ nav {
     text-align: right;
 }
 #antique {
+    display: grid;
     grid-template-columns: 33% 33% 33%;
 }
 #splash2 {
+    display: grid;
     grid-column-start:2;
     grid-column-end: 4;
 }
 #splash3 {
+    display: grid;
     grid-column-start:1;
     grid-column-end: 3;
 }
 #splashSection {
     display: flex;
-    align-items: center;
-    flex: center;
+    align-items:center;
+    justify-content:center;
 }
+#bottom {
+    display:grid;
+    grid-template-columns: 50% 50%;
+}
+#friends {
+    display:grid;
+    grid-column-start:1;
+    grid-column-end:2;
+}
+#jobs {
+    display:grid;
+    grid-column-start:2;
+    grid-column-end:3;
+}
+span {
+    font-size:20pt;
+}
+
